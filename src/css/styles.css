@@ -16,3 +16,50 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 0;
+  margin: 24px 156px;
+  list-style: none;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Модалка на весь екран */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.85); /* темний фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border-radius: 8px;
+}
