@@ -16,7 +16,7 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
-.gallery {
+/* .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
@@ -43,15 +43,15 @@
 }
 
 /* Модалка на весь екран */
-.modal-overlay {
+/* .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,0.85); /* темний фон */
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center;
   align-items: center;
   z-index: 9999;
   cursor: pointer;
@@ -62,4 +62,4 @@
   max-height: 90%;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   border-radius: 8px;
-}
+} */  
